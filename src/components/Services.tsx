@@ -1,5 +1,8 @@
 import React from 'react';
 import { Truck, Home, Trash2, CheckCircle, ArrowRight, ShieldCheck, ShoppingBag, Phone } from 'lucide-react';
+import vanImage from '../assets/images/van_transport_timisoara_1790414152739.jpg';
+import movingImage from '../assets/images/moving_relocation_team_1790414168298.jpg';
+import clearanceImage from '../assets/images/furniture_clearance_service_1790414179555.jpg';
 
 interface ServicesProps {
   onSelectService: (serviceName: string) => void;
@@ -30,7 +33,7 @@ export const Services: React.FC<ServicesProps> = ({ onSelectService }) => {
           <div className="bg-slate-800/80 rounded-2xl border border-slate-700 overflow-hidden flex flex-col hover:border-amber-500/60 transition-all duration-300 shadow-xl hover:shadow-amber-500/10 group">
             <div className="relative h-56 overflow-hidden bg-slate-950">
               <img
-                src="/src/assets/images/van_transport_timisoara_1790414152739.jpg"
+                src={vanImage}
                 alt="Transport marfă și achiziții magazine IKEA Dedeman Timișoara"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
@@ -113,7 +116,7 @@ export const Services: React.FC<ServicesProps> = ({ onSelectService }) => {
 
             <div className="relative h-56 overflow-hidden bg-slate-950">
               <img
-                src="/src/assets/images/moving_relocation_team_1790414168298.jpg"
+                src={movingImage}
                 alt="Mutări mobilă apartamente și firme Timișoara cu manipulanți"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
@@ -191,7 +194,7 @@ export const Services: React.FC<ServicesProps> = ({ onSelectService }) => {
           <div className="bg-slate-800/80 rounded-2xl border border-slate-700 overflow-hidden flex flex-col hover:border-amber-500/60 transition-all duration-300 shadow-xl hover:shadow-amber-500/10 group">
             <div className="relative h-56 overflow-hidden bg-slate-950">
               <img
-                src="/src/assets/images/furniture_clearance_service_1790414179555.jpg"
+                src={clearanceImage}
                 alt="Debarasare apartamente garaje poduri și moloz renovări Timișoara"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Phone, ShieldCheck, Clock, FileText, CheckCircle2, ArrowRight, MapPin, Truck } from 'lucide-react';
+import vanImage from '../assets/images/van_transport_timisoara_1790414152739.jpg';
 
 interface HeroProps {
   onQuoteClick: () => void;
@@ -88,7 +89,7 @@ export const Hero: React.FC<HeroProps> = ({ onQuoteClick }) => {
           <div className="lg:col-span-5 relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-700 bg-slate-800 group">
               <img
-                src="/src/assets/images/van_transport_timisoara_1790414152739.jpg"
+                src={vanImage}
                 alt="Transport dubă Timișoara - Dubă comercială 3.5 tone pregătită pentru mutări și debarasări"
                 className="w-full h-[320px] sm:h-[400px] lg:h-[430px] object-cover group-hover:scale-105 transition-transform duration-700"
                 loading="eager"
